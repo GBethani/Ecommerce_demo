@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Goel\\.virtualenvs\\Ecommerce_site-M5ImsIVR\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\Goel\\.virtualenvs\\Ecommerce_site-M5ImsIVR\\Scripts\\python.exe",
+    "python.linting.enabled": false,
 }
