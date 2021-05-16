@@ -31,12 +31,9 @@
 			<div class="card-body">
 				 
 				<ul class="list-menu">
-				{% if categories %}
-				{% for cat in categories %}
-				<li><a href="#" name="{{cat.name}}">{{cat.name}}</a></li>
+				{% for cat in links %}
+				<li><a href="{{cat.get_url}}">{{cat.name}}</a></li>
 				{% endfor %}
-				{% else %}
-				{% endif %}
 				{% comment %} <li><a href="#">Watches </a></li>
 				<li><a href="#">Cinema  </a></li>
 				<li><a href="#">Clothes  </a></li>
