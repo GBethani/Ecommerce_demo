@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from category.models import Category
 # Create your models here.
 class Product(models.Model):
@@ -16,7 +17,10 @@ class Product(models.Model):
     def __str__(self):
         return self.product_name
 
+    def get_url(self):
+        return reverse('products:product-detail',args=[self.category.slug,self.slug])
+
     @property
     def dollar_amount(self):
-        return '$%s' % self.price if self.price else ""
+        return '$%s' % self.price if self.price else "" 
     
